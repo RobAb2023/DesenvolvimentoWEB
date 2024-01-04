@@ -1,0 +1,68 @@
+/* CSS: Cascading Style Sheets*/
+/* # uso para id*/
+/* class usado estilo para classe -> #principais-estilos.paragrafo*/
+/* padding - espaço dentro da seção*/
+/* margin - espaço em todos oslados  parei no 50:14 da aula de HTML LAYOUT*/
+
+.title{
+    font-size: 50px;
+    font-weight: 400;
+}
+
+section#principais-estilos{
+    background-color: black;
+    color: white; 
+    padding: 50px;
+    margin:20px 60px ;
+    border: 2px solid red;
+    border-radius: 10px;
+}
+#principais-estilos .paragrafo{  
+        font-size: 22px;
+        color: blue;
+        line-height: 1.2;
+        font-family: Arial;
+}
+
+#principais-estilos h1{  
+    color: red; 
+    font-size: 80px;
+}
+
+#flexbox .container{
+    display: flex;
+    flex-direction: row; /* cuidado ao usar column ,inverte-se -> justify content: alinha vertical,  align itens : horizontal */
+    gap: 20px;
+    justify-content: space-between; /* alinhamento horizontal -> between: entre as caixas, around: espaço em volta ,evenly: espaço igual entre os box */
+    align-items: center ;/* alinhamento vertical -> end: alinha no fim do container , start: alinha no inicio do container , center: alinhadas no centro */
+}
+
+#flexbox .container .box{
+   width: 200px; 
+   height: 200px;
+   background-color: green;
+}
+
+#flexbox .container .box2{
+    width: 200px; 
+    height: 400px;
+    background-color: blue;
+ }
+
+ section#grid-layout{
+    margin-top: 50px;
+ }
+
+
+ #grid-layout .container-grid {
+    display: grid; 
+    
+    grid-template-columns: repeat(3,1fr); /*configurando colunas as linhas se alinham */
+    gap: 20px;
+
+ }
+
+ #grid-layout .container-grid .caixa {
+    height: 200px;
+    background-color: blueviolet;
+ }
